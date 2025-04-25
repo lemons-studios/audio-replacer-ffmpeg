@@ -13,8 +13,26 @@ In the future, I may create a github workflow to automatically update this repos
 
 ## Configuration used:
 
-```
---enable-cross-compile --target-os=win64 --arch=x86_64 --cross-prefix=x86_64-w64-mingw32- --enable-gpl --enable-version3 --enable-static --disable-w32threads --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libmp3lame --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+```sh
+--enable-cross-compile \
+--target-os=win64 \
+--arch=x86_64 \
+--cross-prefix=x86_64-w64-mingw32- \
+--enable-gpl \
+--enable-version3 \
+--enable-static \
+--disable-w32threads \
+--enable-libgme \
+--enable-libopenmpt \
+--enable-libopencore-amrwb \
+--enable-libvo-amrwbenc \
+--enable-libgsm \
+--enable-libopencore-amrnb \
+--enable-libmp3lame \
+--enable-libopus \
+--enable-libspeex \
+--enable-libvorbis \
+--enable-librubberband
 ```
 
 You'll want to remove ```--enable-cross-compile``` and ```cross-prefix=x86_64-w64-mingw-32-``` if you are not compiling on msys2. Replace the values of ```target-os``` and ```arch``` to the operating system you are compiling for and the cpu architecutre(s) you are compiling for respectively
