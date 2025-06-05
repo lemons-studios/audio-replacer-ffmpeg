@@ -1,5 +1,8 @@
 # audio-replacer-ffmpeg
 
+# NOTE
+This repository has been **ARCHIVED** due to Audio Replacer 5 using ffmpeg.wasm, which eliminates the need to have a custom executable. the repository will stay up to prevent issues with 4.x versions
+
 This repository contains an extremely scuffed, non-standalone and standalone versions of ffmpeg for windows that only contains common audio libraries. I took the configuration options from the gyan.dev essentials build and compiled with msys2
 
 As indicated by the name of the repository, This is meant for [Audio Replacer](https://github.com/lemons-studios/audio-replacer), an audio dubbing tool that uses ffmpeg for custom user-defined audio filters that get applied after recording. The essentials build from Gyan.dev contains many video tools that simply aren't needed for the project, and causes the size of the executable to baloon to 
